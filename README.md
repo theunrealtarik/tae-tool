@@ -1,3 +1,4 @@
+
 # tae-tool
 It stands for "Tarik Art Engine" (I used my real name, yes). It's a basic  art generator for those guys who are obsessed with generating bunch of random art, aka NFTs based on assets (images) you provide.
 None-programmers will struggle a bit trying to run this program, just follow the instructions, and you should be good to go.
@@ -35,7 +36,7 @@ First of all, you got to know the program won't position the assets for you magi
 - To get a better understanding how in world this piece of software runs, take a look on the `assets` folder and `configs/main.json`, or contact me <br/>
 
 3. **Ready!**
-<br/>If everything has been set, you can run it with this command
+If everything has been set, you can run it with this command
 ```
 node .
 # or
