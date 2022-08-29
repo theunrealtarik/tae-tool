@@ -11,7 +11,7 @@ cd ./tae-tool
 npm install
 ```
 2. **Setup you assets**<br/>
-	- <h3>***postioning***</h3><br/>
+	- ***<h3>postioning</h3>***<br/>
 	First of all, you got to know the program won't position the assets for you magically, thus you have to do it your self.
 	<a href="https://imgbb.com/"><img src="https://i.ibb.co/M5VgZH5/download.png" alt="download" border="0"></a>
 
