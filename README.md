@@ -14,7 +14,7 @@ npm install
 First of all, you got to know the program won't position the assets for you magically, thus you have to do it your self.
 	<a href="https://imgbb.com/"><img src="https://i.ibb.co/M5VgZH5/download.png" alt="download" border="0"></a>
 
-	- ***namin***
+	- ***naming***<br/>
 	To make the software regonize the image value and trait please name it that way:
 	 > *NOTE*:  Just keep the rarity right before the image extention
 	```
@@ -33,7 +33,7 @@ First of all, you got to know the program won't position the assets for you magi
 	<a href="https://ibb.co/fqd2wvw"><img src="https://i.ibb.co/mb5GW8W/Untitled-2022-08-27-1632.png" alt="Untitled-2022-08-27-1632" border="0"></a><br />
  
 - To get a better understanding how in world this piece of software runs, take a look on the `assets` folder and `configs/main.json`, or contact me ;)
-
+<br/>
 3. **Ready!**<br/>
 If everything has been set, you can run it with this command
 ```
