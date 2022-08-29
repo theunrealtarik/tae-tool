@@ -22,8 +22,8 @@ npm install
 	[value]_[rarity].png
 	- e.g: myValue_myRarity.png
 	```
-	- ***add you custom rarities***
-	Of course you can add your own rarities and to do that head up to `./configs/main.json` there you could find add rarities I have already added, delete them if you want and add yours
+	- ***add you custom rarities***<br/>
+	Of course your can add your own rarities and to do that head up to `./configs/main.json` there you could find add rarities I have already added, delete them if you want and add yours
 	```
 	"rarities": [
 		{ "key": "myRariy", "rate": { "up": 100, "down": 0 } }
@@ -35,7 +35,7 @@ npm install
  
 To get a better understanding how in world this piece of software runs, take a look on the `assets` folder and `configs/main.json`, or contact me <br/>
 
-3. **Ready!** <br/>
+3. **Ready to go!** <br/>
 If everything has been set, you can run it with this command
 ```
 node .
