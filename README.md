@@ -12,7 +12,7 @@ npm install
 ```
 2. **Setup you assets**<br/>
 	- ***postioning***<br/>
-First of all, you got to know the program won't position the assets for you magically, thus you have to do it your self.
+	First of all, you got to know the program won't position the assets for you magically, thus you have to do it your self.
 	<a href="https://imgbb.com/"><img src="https://i.ibb.co/M5VgZH5/download.png" alt="download" border="0"></a>
 
 	- ***naming***<br/>
@@ -33,9 +33,9 @@ First of all, you got to know the program won't position the assets for you magi
 
 	<a href="https://ibb.co/fqd2wvw"><img src="https://i.ibb.co/mb5GW8W/Untitled-2022-08-27-1632.png" alt="Untitled-2022-08-27-1632" border="0"></a><br />
  
-- To get a better understanding how in world this piece of software runs, take a look on the `assets` folder and `configs/main.json`, or contact me <br/>
+To get a better understanding how in world this piece of software runs, take a look on the `assets` folder and `configs/main.json`, or contact me <br/>
 
-3. **Ready!**
+3. **Ready!** <br/>
 If everything has been set, you can run it with this command
 ```
 node .
