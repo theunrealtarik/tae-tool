@@ -12,7 +12,7 @@ npm install
 2. **Setup you assets**
 	- ***postioning***
 First of all, you got to know the program won't position the assets for you magically, thus you have to do it your self.
-	<a href="https://ibb.co/WtD7LJp"><img src="https://i.ibb.co/HdNRj8p/download.png" alt="download" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>upload image</a><br />
+	<a href="https://imgbb.com/"><img src="https://i.ibb.co/M5VgZH5/download.png" alt="download" border="0"></a>
 
 	- ***namin***
 	To make the software regonize the image value and trait please name it that way:
