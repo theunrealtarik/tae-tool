@@ -33,17 +33,13 @@ First of all, you got to know the program won't position the assets for you magi
 	<a href="https://ibb.co/fqd2wvw"><img src="https://i.ibb.co/mb5GW8W/Untitled-2022-08-27-1632.png" alt="Untitled-2022-08-27-1632" border="0"></a><br />
  
 - To get a better understanding how in world this piece of software runs, take a look on the `assets` folder and `configs/main.json`, or contact me <br/>
-
-3. **Ready!**
-<br/>
+3.**Ready!**
 If everything has been set, you can run it with this command
 ```
 node .
 # or
 node index.js
 ```
-<br/>
-
 # Disclaimer ⚠️
 DONT EVER TRY TO GENERATE A HIGH AMOUNT OF ART WITH IS PROGRAM IN YOUR MACHINE.
 <br/>
