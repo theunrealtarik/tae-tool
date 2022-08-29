@@ -34,7 +34,8 @@ First of all, you got to know the program won't position the assets for you magi
  
 - To get a better understanding how in world this piece of software runs, take a look on the `assets` folder and `configs/main.json`, or contact me ;)
 <br/>
-3. **Ready!**<br/>
+3. **Ready!**
+<br/>
 If everything has been set, you can run it with this command
 ```
 node .
@@ -42,7 +43,8 @@ node .
 node index.js
 ```
 <br/>
+
 # Disclaimer ⚠️
 DONT EVER TRY TO GENERATE A HIGH AMOUNT OF ART WITH IS PROGRAM IN YOUR MACHINE.
-
+<br/>
 I highly suggest for those pyschos who generates up to 1k, 10k, 100k images to do all what I have been said in a hosted virtual machine which has a good CPU and RAM.
