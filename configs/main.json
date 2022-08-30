@@ -2,10 +2,8 @@
     "defaultAssetsFolder": "./assets",
     "imageSize": { "w": 512, "h": 512 },
     "rarities": [
-        { "key": "common", "rate": { "up": 100, "down": 50 } },
-        { "key": "uncommon", "rate": { "up": 50, "down": 20 } },
-        { "key": "rare", "rate": { "up": 20, "down": 10 } },
-        { "key": "legendary", "rate": { "up": 10, "down": 3 } },
-        { "key": "veryrare", "rate": { "up": 3, "down": 0 } }
+        { "key": "rarity1", "rate": { "up": 100, "down": 50 } },
+        { "key": "rarity2", "rate": { "up": 50, "down": 0 } },
+        { "key": "bg", "rate": { "up": 100, "down": 0 } }
     ]
 }

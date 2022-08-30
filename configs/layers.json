@@ -15,43 +15,16 @@
     ],
     "traits": {
         "0_bg": [
-            "bg_1_common.png",
-            "bg_2_common.png",
-            "bg_3_common.png",
-            "bg_4_common.png"
+            "green_bg.png",
+            "red_bg.png"
         ],
         "1_bodies": [
-            "black_1_uncommon.png",
-            "black_2_legendary.png",
-            "black_3_uncommon.png",
-            "black_4_uncommon.png",
-            "blues_1_rare.png",
-            "blues_2_rare.png",
-            "blues_3_rare.png",
-            "blues_4_rare.png",
-            "white_10_common.png",
-            "white_1_common.png",
-            "white_2_common.png",
-            "white_3_common.png",
-            "white_4_common.png",
-            "white_5_common.png",
-            "white_6_common.png",
-            "white_7_legendary.png",
-            "white_8_common.png",
-            "white_9_common.png",
-            "zombie_1_veryrare.png",
-            "zombie_2_veryrare.png"
+            "white_6_rarity1.png",
+            "zombie_2_rarity2.png"
         ],
         "2_shirts": [
-            "shirt_1_veryrare.png",
-            "shirt_2_common.png",
-            "shirt_3_rare.png",
-            "shirt_4_common.png",
-            "shirt_5_common.png",
-            "shirt_6_legendary.png",
-            "shirt_7_common.png",
-            "shirt_8_uncommon.png",
-            "shirt_9_uncommon.png"
+            "skull_rarity1.png",
+            "vest_rarity2.png"
         ]
     }
 }

@@ -1,34 +1,27 @@
 const fs = require("fs");
 const path = require("path");
 const chalk = require("chalk");
-const { Generator } = require("./lib/generator");
 const inquirer = require("inquirer");
 
+const { Generator } = require("./lib/generator");
+const { calcMax } = require("./helpers/max");
+
 // configuration file
-const main = require("./configs/main.json");
+const MAIN = require("./configs/main.json");
+const AG_DNA = [];
 
 // cli tools vibe
+console.clear();
 inquirer
     .prompt([
-        {
-            type: "confirm",
-            name: "confirmation",
-            message: "Is everything set? (positioning, naming ...)",
-        },
         {
             type: "input",
             name: "assetsFolder",
             message: "Enter the assets folder path",
-            default: main.defaultAssetsFolder,
+            default: MAIN.defaultAssetsFolder,
         },
     ])
     .then((answers) => {
-        // setup for generation
-        if (!answers.confirmation) {
-            console.log("exited with code 1.");
-            process.exit(1);
-        }
-
         console.log(chalk.cyan("◌") + " Reading assets directory ...");
         console.time("⏱");
         let folders = fs.readdirSync(answers.assetsFolder);
@@ -66,38 +59,78 @@ inquirer
                 default: path.join(__dirname, "output"),
             },
             {
+                type: "input",
+                name: "projectName",
+                message: "Enter your project name",
+                default: String(Math.floor(Math.random() * 10 ** 6)),
+            },
+            {
                 type: "number",
                 name: "count",
                 message: "Enter the number of images u wanna generate",
                 default: 1,
             },
         ]).then((answers) => {
+            let count = answers.count;
+
+            let projectOPath = path.join(
+                answers.outputPath,
+                answers.projectName
+            );
+
             if (!fs.existsSync(answers.outputPath)) {
                 console.log(chalk.red("err: ") + "output path doesn't exist");
                 process.exit(1);
             }
 
-            if(fs.readdirSync(answers.outputPath).length > 0){
-                console.log(chalk.yellow("warning: ") + "output folder must be empty!");
+            if (!fs.existsSync(projectOPath)) {
+                console.log(
+                    chalk.green("log: ") + "project folder has been created"
+                );
+                fs.mkdirSync(projectOPath);
+            }
+
+            if (fs.readdirSync(projectOPath).length > 0) {
+                console.log(
+                    chalk.yellow("warning: ") + "output folder must be empty!"
+                );
                 process.exit(1);
             }
 
-            if (answers.count == 0) {
+            if (count <= 0) {
                 console.log(chalk.red("err: ") + "no need to generate");
                 process.exit(1);
             }
 
-            console.log(chalk.bold("creating folders ..."));
-            async function run(i) {
-                const generator = new Generator(
-                    main.imageSize,
-                    answers.outputPath
+            // calc the max of possible combos
+            const LAYERS = require("./configs/layers.json");
+            const MAX = calcMax(...Object.values(LAYERS.traits));
+
+            if (count > MAX) {
+                console.log(
+                    chalk.red("err: ") +
+                        "the maximum u can generate with the provided assets is " +
+                        chalk.bold(MAX)
                 );
-                await generator.renderImage(i);
+                process.exit(1);
             }
 
-            for (let i = 0; i < answers.count; i++) {
-                run(i)
+            // rendering images and meta data & checks for repeated ones
+            console.log(chalk.bold("creating folders ..."));
+            async function run(i) {
+                const generator = new Generator(MAIN.imageSize, projectOPath);
+                let dna = generator.generateDNA();
+
+                if (!AG_DNA.includes(dna)) {
+                    AG_DNA.push(dna);
+                    await generator.renderImage(i);
+                } else {
+                    run(i);
+                }
+            }
+
+            for (let i = 0; i < count; i++) {
+                run(i);
             }
         });
     });
