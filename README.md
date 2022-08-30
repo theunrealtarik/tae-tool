@@ -43,6 +43,6 @@ node .
 node index.js
 ```
 # Disclaimer ⚠️
-DONT EVER TRY TO GENERATE A HIGH AMOUNT OF ART WITH IS PROGRAM IN YOUR MACHINE.
+DONT EVER TRY TO GENERATE A HIGH AMOUNT OF ART WITH THIS PROGRAM IN LOCAL YOUR MACHINE.
 <br/>
 I highly suggest for those pyschos who generates up to 1k, 10k, 100k images to do all what I have been said in a hosted virtual machine which has a good CPU and RAM.
